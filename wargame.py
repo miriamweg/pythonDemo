@@ -11,7 +11,7 @@ class card:
 def play_war(deck):   
     a_cards = deck[:len(deck)/2]
     b_cards = deck[len(deck)/2:]
-    #print(f"Rank is {card.rank} suit is {card.suit}")
+    print(f"Rank is {card.rank} suit is {card.suit}")
     for card in range(a_cards):
         print(f"Rank is {card.rank} suit is {card.suit}")
 
@@ -22,7 +22,7 @@ def suits():
 
 
 if __name__ == "__main__":
-    #deck = initialize_deck()
+    deck = initialize_deck()
 #def initialize_deck():  
     deck = [card(rank, suit) for rank in ranks() for suit in suits()]
     random.shuffle(deck)
